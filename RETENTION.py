@@ -17,12 +17,20 @@ def main():
     # Here you put list of files with CV data. If it is empty it will ask for path.
     list_filenames = [
 
-        './el04_on-off_retention_06_CA_C01.txt',
+        './el15_1_01_ca0p5v5x_iv0p5v5x_01_CA_C01.txt',
+        './el15_3_11_ca1p5v5x_iv1p5v5x_01_CA_C01.txt',
+        './el15_2_05_ca1p0v5x_iv1p0v5x_01_CA_C01.txt',
+        './el15_4_15_ca2p0v5x_iv2p0v5x_01_CA_C01.txt',
+        './el15_5_21_ca2p5v5x_iv2p5v5x_01_CA_C01.txt',
+        './el15_6_25_ca3p0v5x_iv3p0v5x_01_CA_C01.txt',
+        './el15_7_31_ca3p5v5x_iv3p5v5x_01_CA_C01.txt',
+
     ]
 
     # Put your on-off sequence here:
-    sequence = ['bias', 'read']
-    #sequence = ['bias', 'set', 'bias', 'read']
+    # sequence = ['bias', 'readBEFORE', 'bias', 'readAFTER']  # for retention BASELINE
+    #sequence = ['bias', 'read'] #for retention
+    sequence = ['bias', 'set', 'bias', 'read'] #for pot-depr exp
 
     extract_retention = True    # <- for extracting retention
     save_data = False           # <- for saving data (as out_{filename})

@@ -20,39 +20,81 @@ def main():
     # Here you put list of files with STDP data. If it is empty it will ask for path.
     list_filenames = [
 
-        './dataSTDP/stdp(27).txt',
-        # './dataSTDP/stdp(1).txt',
+        './dataSTDP/stdp.txt',
+        './dataSTDP/stdp(1).txt',
+        './dataSTDP/stdp(2).txt',
+        './dataSTDP/stdp(3).txt',
+        './dataSTDP/stdp(4).txt',
+        './dataSTDP/stdp(5).txt',
+        './dataSTDP/stdp(6).txt',
+        './dataSTDP/stdp(7).txt',
+        './dataSTDP/stdp(8).txt',
+        './dataSTDP/stdp(9).txt',
 
-        # './dataSTDP/stdp(10).txt',
-        # './dataSTDP/stdp(11).txt',
-        # './dataSTDP/stdp(12).txt',
-        # './dataSTDP/stdp(13).txt',
-        # './dataSTDP/stdp(14).txt',
-        # './dataSTDP/stdp(15).txt',
-        # './dataSTDP/stdp(16).txt',
-        # './dataSTDP/stdp(17).txt',
-        # './dataSTDP/stdp(18).txt',
-        # './dataSTDP/stdp(19).txt',
-        # './dataSTDP/stdp(2).txt',
-        # './dataSTDP/stdp(20).txt',
-        # './dataSTDP/stdp(21).txt',
-        # './dataSTDP/stdp(22).txt',
-        # './dataSTDP/stdp(23).txt',
-        # './dataSTDP/stdp(24).txt',
-        # './dataSTDP/stdp(25).txt',
-        # './dataSTDP/stdp(26).txt',
-        # './dataSTDP/stdp(27).txt',
-        # './dataSTDP/stdp(28).txt',
-        # './dataSTDP/stdp(29).txt',
-        # './dataSTDP/stdp(3).txt',
-        # './dataSTDP/stdp(30).txt',
-        # './dataSTDP/stdp(4).txt',
-        # './dataSTDP/stdp(5).txt',
-        # './dataSTDP/stdp(6).txt',
-        # './dataSTDP/stdp(7).txt',
-        # './dataSTDP/stdp(8).txt',
-        # './dataSTDP/stdp(9).txt',
-        # './dataSTDP/stdp.txt'
+        './dataSTDP/stdp(10).txt',
+
+        './dataSTDP/stdp(11).txt',
+        './dataSTDP/stdp(12).txt',
+        './dataSTDP/stdp(13).txt',
+        './dataSTDP/stdp(14).txt',
+        './dataSTDP/stdp(15).txt',
+
+        './dataSTDP/stdp(16).txt',
+        './dataSTDP/stdp(17).txt',
+        './dataSTDP/stdp(18).txt',
+        './dataSTDP/stdp(19).txt',
+
+        './dataSTDP/stdp(20).txt',
+        './dataSTDP/stdp(21).txt',
+        './dataSTDP/stdp(22).txt',
+        './dataSTDP/stdp(23).txt',
+        './dataSTDP/stdp(24).txt',
+        './dataSTDP/stdp(25).txt',
+        './dataSTDP/stdp(26).txt',
+        './dataSTDP/stdp(27).txt',
+        './dataSTDP/stdp(28).txt',
+        './dataSTDP/stdp(29).txt',
+
+        './dataSTDP/stdp(30).txt',
+
+        # './dataSTDP/stdp(31).txt',
+        # './dataSTDP/stdp(32).txt',
+        # './dataSTDP/stdp(33).txt',
+        # './dataSTDP/stdp(34).txt',
+        # './dataSTDP/stdp(35).txt',
+        # './dataSTDP/stdp(36).txt',
+        # './dataSTDP/stdp(37).txt',
+        # './dataSTDP/stdp(38).txt',
+        # './dataSTDP/stdp(39).txt',
+        #
+        # './dataSTDP/stdp(40).txt',
+        #
+        # './dataSTDP/stdp(41).txt',
+        # './dataSTDP/stdp(42).txt',
+        # './dataSTDP/stdp(43).txt',
+        # './dataSTDP/stdp(44).txt',
+        # './dataSTDP/stdp(45).txt',
+        # './dataSTDP/stdp(46).txt',
+        # './dataSTDP/stdp(47).txt',
+        # './dataSTDP/stdp(48).txt',
+        # './dataSTDP/stdp(49).txt',
+        #
+        # './dataSTDP/stdp(50).txt',
+        #
+        # './dataSTDP/stdp(51).txt',
+        # './dataSTDP/stdp(52).txt',
+        # './dataSTDP/stdp(53).txt',
+        # './dataSTDP/stdp(54).txt',
+        # './dataSTDP/stdp(55).txt',
+        # './dataSTDP/stdp(56).txt',
+        # './dataSTDP/stdp(57).txt',
+        # './dataSTDP/stdp(58).txt',
+        # './dataSTDP/stdp(59).txt',
+        #
+        # './dataSTDP/stdp(60).txt',
+        #
+        # './dataSTDP/stdp(61).txt',
+
 
     ]
 
@@ -71,7 +113,8 @@ def main():
     save_STDP = True
     save_reads = True
     save_resets = True
-    no_of_reads = 6 #missing description!
+    no_of_reads = 2
+    #missing description!
     # find_odd_ones_out = True
 
     # plot_assigning = True
@@ -85,15 +128,20 @@ def main():
     # hardcoded_stdp2_V = None
     # hardcoded_reset_V = None
     hardcoded_bias_V = 0
-    hardcoded_read_V = +0.168
+    hardcoded_read_V = +0.180
+    # hardcoded_read_V = +0.083
     hardcoded_stdp1_V = -0.00
+
+
     hardcoded_stdp2_V = +0.00
-    hardcoded_reset_V = +1.90  # POSITIVE exp01 & exp03| NEGATIVE exp02 & exp04
+    hardcoded_reset_V = +1.910 # POSITIVE exp01 & exp03| NEGATIVE exp02 & exp04
+    # hardcoded_reset_V = +0.950  # POSITIVE exp01 & exp03| NEGATIVE exp02 & exp04
+
 
     starting_dt = 0.0000 #change if your first file is connected with dt other than 0!!!
-    number_of_sequences = 2 #number of sequences to be taken into calculations
+    number_of_sequences = 3 #number of sequences to be taken into calculations
     starting_reset = 1 #reading after N-th reset
-    variation = 0.1# typically you should put +/- 15% variations of the of the signals
+    variation = 0.03# typically you should put +/- 15% variations of the of the signals
     bsl_corr = 0.0000 #adding several uA or mA to the backgoround / USE ONLY IF NECESSARY /  TO DO: change it to average of the backgorund
 
     if len(list_filenames) == 0:

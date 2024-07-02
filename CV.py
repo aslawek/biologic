@@ -15,11 +15,15 @@ def main():
 
     # Here you put list of files with CV data. If it is empty it will ask for path.
     list_filenames = [
-        './el07_IV-scan-initial_C01_1to3_01_CV_C01.txt',
-        './el07_IV-scan-initial_C01_1to3_02_CV_C01.txt',
-        './el07_IV-scan-initial_C01_1to3_03_CV_C01.txt',
-        './el07_IV-scan-initial_C01_1to3_04_CV_C01.txt',
-        './el07_IV-scan-initial_C01_1to3_05_CV_C01.txt',
+
+        './el02_1_01_ca0p5v5x_iv0p5v5x_02_CV_C02.txt',
+        './el02_2_05_ca1p0v5x_iv1p0v5x_02_CV_C02.txt',
+        './el02_3_11_ca1p5v5x_iv1p5v5x_02_CV_C02.txt',
+        './el02_4_15_ca2p0v5x_iv2p0v5x_02_CV_C02.txt',
+        './el02_5_21_ca2p5v5x_iv2p5v5x_02_CV_C02.txt',
+        './el02_6_25_ca3p0v5x_iv3p0v5x_02_CV_C02.txt',
+        './el02_7_31_ca3p5v5x_iv3p5v5x_02_CV_C02.txt'
+
     ]
 
     assign_cycles = True                # <- number cycles of CV
@@ -28,11 +32,11 @@ def main():
 
     # For plotting:
     plot_CV_simple = False
-    plot_CV_simple_with_log_scale = True
+    plot_CV_simple_with_log_scale = False
     plot_CV_cycles = False
-    plot_CV_cycles_with_log_scale = True
+    plot_CV_cycles_with_log_scale = False
     plot_CV_direction = False
-    plot_CV_direction_cycles = True
+    plot_CV_direction_cycles = False
 
     if len(list_filenames) == 0:
         list_filenames.append(input('\nNo element found in list_data, please give me a path to Your data: '))

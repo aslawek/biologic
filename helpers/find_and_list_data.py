@@ -5,7 +5,9 @@ main = lambda f: f()
 @main
 def main():
     # Here You put the name of the folder where the data is kept (relative to ../Biologic/)
-    data_folder = "../"
+    # data_folder = "../dataSRDP"
+    data_folder = "../dataCA"
+   # data_folder = "../"
 
     list_filenames = os.listdir(f'./{data_folder}')
 

@@ -17,7 +17,7 @@ def main():
     # Here you put list of files with CV data. If it is empty it will ask for path.
     list_filenames = [
 
-        './el07_on-off-retention_02_CA_C01.txt',
+        './el13_on-off-retention2x_02_CA_C01.txt',
     ]
 
     # Put your on-off sequence here:

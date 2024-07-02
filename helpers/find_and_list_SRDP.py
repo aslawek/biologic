@@ -9,16 +9,16 @@ def main():
 
     # Here type phrases that appear in files that you DO care about:
     phrases = [
-        'start_CV_04_CA_C01',
-        'start_CV_07_CA_C01',
-        'start_CV_10_CA_C01',
-        'start_CV_13_CA_C01',
-        'start_CV_16_CA_C01',
-        'end_CV_02_CA_C01',
-        'end_CV_05_CA_C01',
-        'end_CV_08_CA_C01',
-        'end_CV_11_CA_C01',
-        'end_CV_14_CA_C01'
+        # 'start_CV_04_CA_C01',
+        # 'start_CV_07_CA_C01',
+        # 'start_CV_10_CA_C01',
+        # 'start_CV_13_CA_C01',
+        # 'start_CV_16_CA_C01',
+        # 'end_CV_02_CA_C01',
+        # 'end_CV_05_CA_C01',
+        # 'end_CV_08_CA_C01',
+        # 'end_CV_11_CA_C01',
+        # 'end_CV_14_CA_C01'
     ]
 
     list_filenames = os.listdir(f'./{data_folder}')
